@@ -1,0 +1,21 @@
+{
+    "$schema":"http://json-schema.org/draft-04/schema",
+    "title": "UserInputModel",
+    "description": "Validacion de los datos de usuario",
+    "type":"object",
+    "properties": {
+        "name":{
+            "description": "nombre del usuario",
+            "type":"string"
+        },
+        "lastName":{
+            "description": "apellido del usuario",
+            "type":"string"
+        },
+        "company":{
+            "description":"empresa del usuario",
+            "type":"string"
+        }
+    },
+    "required":["name","lastName","company"]
+}

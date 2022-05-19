@@ -1,0 +1,19 @@
+{
+  "name": "gestion-empleados-api",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "author": "Luis Briceno",
+  "license": "MIT",
+  "scripts": {
+    "deploy:dev": "sls deploy --stage dev --region us-east-1",
+    "offline": "sls offline --stage dev --region us-east-1 --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^7.0.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.92.0",
+    "http-status-codes": "^2.1.4",
+    "uuid": "^8.3.2"
+  }
+}
